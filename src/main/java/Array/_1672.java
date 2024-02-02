@@ -17,6 +17,7 @@ public class _1672 {
             }
             if (sumPrice > maxPrice){
                 maxPrice = sumPrice;
+
             }
 //            arraySumPrice[i] = sumPrice;
         }
