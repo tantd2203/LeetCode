@@ -1,0 +1,11 @@
+
+n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(´Æ·ÿÿÿÿÿ8µ–éñÌ1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÀîéÉÿÿÿÿÿ8¶–éñÌ1
+`
+java:S1659">Declare "m" and all following declarations on a separate line.(â…²Êøÿÿÿÿ8º–éñÌ1
+L
+java:S1197"*Move the array designators [] to the type.(â…²Êøÿÿÿÿ8»–éñÌ1
+L
+java:S1197"*Move the array designators [] to the type.(â…²Êøÿÿÿÿ8»–éñÌ1
+J
+java:S1172"(Remove this unused method parameter "n".(äÎ®«ÿÿÿÿÿ8¼–éñÌ1

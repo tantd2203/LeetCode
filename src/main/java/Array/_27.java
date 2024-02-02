@@ -3,7 +3,7 @@ package Array;
 public class _27 {
 
     public static void main(String[] args) {
-      int   nums[] = {3,2,2,3}, val = 3;
+      int   nums [] = {3,2,2,3}, val = 3;
       int a=   removeElement(nums,val);
         System.out.println(a);
     }
