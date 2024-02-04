@@ -23,6 +23,7 @@ public class _414 {
 
     }
 
+//
     public static void main(String[] args) {
         int[] array = {1,2};
         System.out.println(  thirdMax(array));
