@@ -27,7 +27,7 @@ public class InsertionSort {
         System.out.println( );
     }
     public static void main(String[] args) {
-        int a[] = {4,2,1,7,8,5};
+        int a[] = {4,2,2,1,7,8,5};
         Insertion_Sort(a);
 
     }
