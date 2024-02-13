@@ -3,7 +3,7 @@ package Stack_and_Queue;
 public class MyArrayStack implements  IStackQueue{
 
 
-    private  int[] array;
+    private   int[] array;
     private  int SIZE;
 
     private  int topIndex;
