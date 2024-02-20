@@ -17,9 +17,7 @@ public class MergeSort {
         int[] l2 = mergeSort(nums, k + 1, Right);
         System.out.println("Chia" + Left + "-" + Right);
 //        merge các phần tử lai
-        int[] result = merge(l1, l2);
-
-        return result;
+        return  merge(l1, l2);
     }
 
     private static int[] merge(int[] l1, int[] l2) {
