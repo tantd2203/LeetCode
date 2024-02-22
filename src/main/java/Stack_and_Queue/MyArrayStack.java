@@ -2,6 +2,13 @@ package Stack_and_Queue;
 
 public class MyArrayStack implements  IStackQueue{
 
+    public  class  Node {
+        int value ;
+        Node next;
+        Node (int value){
+            this.value= value;
+        }
+    }
 
     private   int[] array;
     private  int SIZE;
