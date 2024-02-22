@@ -16,7 +16,7 @@ public class MyArrayQueue implements IStackQueue {
     @Override
     public boolean push(int value) {
         if (!IsFull()) {
-
+//            just in 1 element
             if (IsEmpty()) {
                 headIndex++;
             }
