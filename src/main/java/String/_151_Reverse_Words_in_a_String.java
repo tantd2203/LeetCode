@@ -21,7 +21,5 @@ public class _151_Reverse_Words_in_a_String {
         return reversedSentence.toString();
     }
     public static void main(String[] args) {
-        String s= "  hello world  ";
-        System.out.println(  reverseWords(s));
     }
 }
