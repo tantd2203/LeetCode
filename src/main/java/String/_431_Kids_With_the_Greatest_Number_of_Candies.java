@@ -23,10 +23,6 @@ public class _431_Kids_With_the_Greatest_Number_of_Candies {
 
     public static void main(String[] args) {
 
-//       int[] candies = {2, 3, 5, 1, 3};
-//        int extraCandies = 3;
-//        List<Boolean> result = kidsWithCandies(candies, extraCandies);
-//
-//        result.stream().forEach(System.out::println);
+
     }
 }
