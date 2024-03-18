@@ -1,6 +1,7 @@
 package String;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class _443_String_Compression {
@@ -34,13 +35,15 @@ public class _443_String_Compression {
             chars[i] = compressedChars[i];
         }
 
+        System.out.println(sb.toString());
+
         return sb.length();
     }
 
 
     public static void main(String[] args) {
 
-        char[] chars = {'a', 'a', 'b', 'b', 'c', 'c', 'c'};
+        char[] chars = {'a','b', 'c', 'c', 'c'};
         System.out.println(compress(chars));
     }
 }
