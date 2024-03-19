@@ -1,8 +1,6 @@
 package TwoPointers;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 public class _283_Move_Zeroes {
     public static void moveZeroes(int[] nums) {
@@ -14,12 +12,12 @@ public class _283_Move_Zeroes {
                 nums[index++] = num;
             }
         }
-
         while (index < n) {
+
             nums[index++] = 0;
         }
 
-        Arrays.stream(nums).forEach(num -> System.out.print( num +" "));
+        Arrays.stream(nums).forEach(num -> System.out.print(num + " "));
 
     }
 
