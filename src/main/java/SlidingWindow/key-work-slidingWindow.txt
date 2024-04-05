@@ -1,0 +1,6 @@
+Nhận diện bài toán về SlidingWindow
+- Cho 1 dãy số và cho k để lấy  tính tổng số phần tử đó
+
+- Key ở đây là thêm phần tử mới và xóa phân tử cũ
+
+sample tìm max
