@@ -10,7 +10,4 @@ public class _108_Defanging_an_IP_Address {
 
     }
 
-    public static void main(String[] args) {
-
-    }
 }
