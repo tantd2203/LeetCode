@@ -3,4 +3,4 @@ Nhận diện bài toán về SlidingWindow
 
 - Key ở đây là thêm phần tử mới và xóa phân tử cũ
 
-sample tìm max
+sample tìm
