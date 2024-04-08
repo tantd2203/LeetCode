@@ -8,7 +8,7 @@ public class _2011_Final_Value_of_Variable_After_Performing_Operations {
         for (String operation : operations) {
             if (operation.contains("++")) {
                 x++;
-            } else {
+            } else {    // operation.contains("--")
                 x--;
             }
         }
