@@ -1,6 +1,6 @@
 package PrefixSum;
 
-public class _724_Find_Pivot_Index {
+public class _724_Find_Pivot_Index  {
     public int pivotIndex(int[] nums) {
         int sumLeft = 0;
         int sumRight = 0;
