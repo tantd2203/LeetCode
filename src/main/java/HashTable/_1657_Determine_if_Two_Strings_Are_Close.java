@@ -4,27 +4,23 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-public class _1657_Determine_if_Two_Strings_Are_Close {
+    public class _1657_Determine_if_Two_Strings_Are_Close {
 
     public static boolean closeStrings(String word1, String word2) {
-        int[] counts1 = new int[26];
-        int[] counts2 = new int[26];
+        var map1 = new int[26];
+        var map2 = new int[26];
 
+        for (var c : word1.toCharArray()) map1[c - 'a']++;
+        for (var c : word2.toCharArray()) map2[c - 'a']++;
 
-        Set<Character> set1 = new HashSet<>();
-        Set<Character> set2 = new HashSet<>();
-
-        for (char c : word1.toCharArray()) {
-            counts1[c - 'a']++;
+        for (var i=0; i<26; i++) {
+            if (map1[i] == 0 && map2[i] != 0) return false;
+            if (map1[i] != 0 && map2[i] == 0) return false;
         }
+        Arrays.sort(map1);
+        Arrays.sort(map2);
 
-        for (char c : word2.toCharArray()) {
-            counts2[c - 'a']++;
-        }
-
-        Arrays.sort(counts1);
-        Arrays.sort(counts2);
-        return set1.equals(set2) && Arrays.equals(counts1, counts2);
+        return Arrays.equals(map1, map2);
     }
 
     public static void main(String[] args) {
