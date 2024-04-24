@@ -20,7 +20,6 @@ public class _2390_Removing_Stars_From_a_String {
             ans.append(item);
         }
 
-
         return ans.toString();
     }
 

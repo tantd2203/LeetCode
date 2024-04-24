@@ -14,7 +14,7 @@ public class _20_Valid_Parentheses {
                 if (stack.isEmpty()) {
                     return true;
                 }
-                char openPeek = stack.peek();
+                char openPeek =  stack.peek();
 
                 if (c == ')' && openPeek == '('
                         || c == ']' && openPeek == '['
