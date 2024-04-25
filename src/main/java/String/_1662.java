@@ -17,6 +17,5 @@ public class _1662 {
     }
     public static void main(String[] args) {
        String [] word1 = {"ab", "c"}, word2 = {"a", "bc"};
-        System.out.println(arrayStringsAreEqual(word1,word2));
     }
 }
