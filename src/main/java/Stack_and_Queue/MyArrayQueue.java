@@ -1,7 +1,6 @@
 package Stack_and_Queue;
 
 public class MyArrayQueue implements IStackQueue {
-
     private int[] array;
     private int SIZE;
     private int headIndex;
