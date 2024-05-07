@@ -16,7 +16,7 @@ public class _148_Sort_List {
     public static ListNode sortList(ListNode head) {
 
 
-        return  null    ;
+        return  null  ;
     }
     public static void main(String[] args) {
 
