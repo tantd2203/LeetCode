@@ -31,7 +31,7 @@ public class LinkedList {
         }
     }
 
-    public static Node addToHead(Node headNode, int value) {
+    public static Node addAtHead(Node headNode, int value) {
 
         Node newNode = new Node(value);
         if (headNode != null) {
@@ -40,7 +40,7 @@ public class LinkedList {
         return newNode;
     }
 
-    public static Node addToTail(Node headNode, int value) {
+    public static Node addAtTail(Node headNode, int value) {
         Node newNode = new Node(value);
         if (headNode == null) {
             return newNode;
@@ -58,7 +58,7 @@ public class LinkedList {
     public static Node addToIndex(Node headNode, int value, int index) {
         Node newNode = new Node(value);
         if (index == 0) {
-            return addToHead(headNode, value);
+            return addAtHead(headNode, value);
         } else {
 //            step 1 Find index need add  in Node
             Node curNode = headNode;
@@ -157,9 +157,9 @@ public class LinkedList {
 
     public static void main(String[] args) {
         Node n1 = new Node(1);
-        addToTail(n1, 2);
-        addToTail(n1, 3);
-        addToTail(n1, 4);
+        addAtTail(n1, 2);
+        addAtTail(n1, 3);
+        addAtTail(n1, 4);
 
         printLinkedList(n1);
         n1 = removeAtIndex(n1, 0);
