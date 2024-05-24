@@ -1,3 +1,4 @@
+
 package LinkedList;
 
 
@@ -20,22 +21,22 @@ class _206 {
         }
     }
     public static ListNode reverseList(ListNode head) {
-    ListNode curNode = head;
-    while (curNode!=null && curNode.next !=null)
-    {
-        ListNode nextNode = curNode.next;
-        curNode.next = nextNode.next;
-        nextNode.next = head;
-        head = nextNode;
-    }
-    return  head;
+        ListNode curNode = head;
+        while (curNode!=null && curNode.next !=null)
+        {
+            ListNode nextNode = curNode.next;
+            curNode.next = nextNode.next;
+            nextNode.next = head;
+            head = nextNode;
+        }
+        return  head;
     }
     public static void printLinkedList(ListNode head) {
 
         if (head == null) {
             System.out.println("List is empty");
         } else {
-                ListNode temp = head;
+            ListNode temp = head;
             while (temp != null) {
                 System.out.print(temp.val);
                 temp = temp.next;
