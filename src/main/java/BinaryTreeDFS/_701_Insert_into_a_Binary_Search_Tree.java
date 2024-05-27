@@ -1,7 +1,7 @@
 package BinaryTreeDFS;
 
 
-public class MyBST {
+public class _701_Insert_into_a_Binary_Search_Tree {
     private TreeNode mRoot;
 
     public TreeNode insert(TreeNode root, int val) {
@@ -41,7 +41,7 @@ public class MyBST {
     }
 
     public static void main(String[] args) {
-        MyBST bst = new MyBST();
+        _701_Insert_into_a_Binary_Search_Tree bst = new _701_Insert_into_a_Binary_Search_Tree();
         bst.mRoot = bst.insert(bst.mRoot, 5);
         bst.mRoot = bst.insert(bst.mRoot, 3);
         bst.mRoot = bst.insert(bst.mRoot, 7);
