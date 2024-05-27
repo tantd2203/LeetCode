@@ -1,4 +1,4 @@
-package BinarySearch;
+package BinaryTreeDFS;
 
 class TreeNode {
     int val;
