@@ -7,7 +7,7 @@ import java.util.Map;
 
 public class _17_Letter_Combinations_of_a_Phone_Number {
     public List<String> letterCombinations(String digits) {
-        List<String> res = new ArrayList<>()
+        List<String> res = new ArrayList<>();
 
         if (digits == null || digits.length() == 0) {
             return res;
