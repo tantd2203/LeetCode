@@ -6,33 +6,28 @@ import java.util.*;
 
 public class _383_Ransom_Note {
     public static boolean canConstruct(String ransomNote, String magazine) {
+        Map<Character, Integer> r = new HashMap<>();
+        Map<Character, Integer> m = new HashMap<>();
 
-        HashMap<Character, Integer> r = new HashMap<>();
-        HashMap<Character, Integer> m = new HashMap<>();
+        for (char ra : ransomNote.toCharArray()) {
 
-        // Đếm số lần xuất hiện của mỗi ký tự trong ransomNote
-        for (char s : ransomNote.toCharArray()) {
-            r.put(s, r.getOrDefault(s, 0) + 1);
+            r.put(ra, r.getOrDefault(ra, 0) + 1);
+
+        }
+        for (char ma : magazine.toCharArray()) {
+
+            m.put(ma, m.getOrDefault(ma, 0) + 1);
+
         }
 
-        // Đếm số lần xuất hiện của mỗi ký tự trong magazine
-        for (char s : magazine.toCharArray()) {
-            m.put(s, m.getOrDefault(s, 0) + 1);
-        }
-
-        // Kiểm tra từng ký tự trong ransomNote
         for (char s : r.keySet()) {
-            if (r.get(s) > m.getOrDefault(s, 0)) {
-                return false; // Nếu bất kỳ ký tự nào trong ransomNote không có đủ trong magazine
-            }
+            if (r.get(s) > m.getOrDefault(s,0)) return false;
         }
-
-        return true; // Có thể tạo ransomNote từ magazine
-
+        return true;
     }
 
     public static void main(String[] args) {
-        System.out.println(  canConstruct("aa", "aac"));
+        System.out.println(canConstruct("aa", "aac"));
 
     }
 }
