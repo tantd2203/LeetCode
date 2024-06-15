@@ -14,7 +14,7 @@ public class _226_Invert_Binary_Tree {
     }
 }
 /*
- * create TreeNode curr value = 0
+ * swap value of node
  *
  *
  * */
