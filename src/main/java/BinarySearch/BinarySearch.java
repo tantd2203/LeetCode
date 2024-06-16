@@ -8,7 +8,9 @@ public class BinarySearch {
         int IRight = size - 1;
 
         while (ILeft <= IRight) {
+
             int IMid = (IRight + ILeft) / 2;
+
             if (nums[IMid] == target) {
                 return IMid;
             } else if (target > nums[IMid]) {
