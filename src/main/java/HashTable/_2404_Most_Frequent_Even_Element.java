@@ -7,7 +7,6 @@ import java.util.TreeMap;
 public class _2404_Most_Frequent_Even_Element {
     public static int mostFrequentEven(int[] nums) {
         TreeMap<Integer, Integer> map = new TreeMap<>();
-        Arrays.sort(nums);
         for (Integer num : nums) {
             if (num % 2 == 0) {
                 map.put(num, map.getOrDefault(num, 0) + 1);
