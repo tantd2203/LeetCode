@@ -1,6 +1,6 @@
 package Array;
 
-public class _27 {
+public class _27_Remove_Element {
 
     public static void main(String[] args) {
       int   nums [] = {3,2,2,3}, val = 3;

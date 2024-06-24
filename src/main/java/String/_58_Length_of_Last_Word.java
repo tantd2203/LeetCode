@@ -1,6 +1,6 @@
 package String;
 
-public class _58 {
+public class _58_Length_of_Last_Word {
     public static int lengthOfLastWord(String s) {
 
         String[] result = s.split(" ");

@@ -1,6 +1,6 @@
 package String;
 
-public class _387 {
+public class _387_First_Unique_Character_in_a_String {
 
     public static int firstUniqChar(String s) {
     char [] arr=  s.toCharArray();

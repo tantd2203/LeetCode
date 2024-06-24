@@ -3,7 +3,7 @@ package LinkedList;
 
 
 
-class _206 {
+class _206_Reverse_Linked_List {
     public static class ListNode {
         int val;
         ListNode next;

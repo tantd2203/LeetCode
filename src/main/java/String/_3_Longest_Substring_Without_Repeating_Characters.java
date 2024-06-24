@@ -3,7 +3,7 @@ package String;
 import java.util.HashSet;
 import java.util.Stack;
 
-public class _3 {
+public class _3_Longest_Substring_Without_Repeating_Characters {
 
 
     public static int lengthOfLongestSubstring(String s) {

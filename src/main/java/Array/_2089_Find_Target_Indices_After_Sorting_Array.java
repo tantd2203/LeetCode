@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class _2089 {
+public class _2089_Find_Target_Indices_After_Sorting_Array {
     public static List<Integer> targetIndices(int[] nums, int target) {Arrays.sort(nums);
         List<Integer> indices = new ArrayList<>();
         for (int i = 0; i < nums.length; i++) {

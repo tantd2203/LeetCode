@@ -1,6 +1,6 @@
 package LinkedList;
 
-public class _21 {
+public class _21_Merge_Two_Sorted_Lists {
     public static class ListNode {
         int val;
         ListNode next;
@@ -58,7 +58,7 @@ public class _21 {
     }
 
     public static void main(String[] args) {
-        _21 solution = new _21();
+        _21_Merge_Two_Sorted_Lists solution = new _21_Merge_Two_Sorted_Lists();
         // Example lists
         ListNode l1 = new ListNode(1);
         l1.next = new ListNode(2);

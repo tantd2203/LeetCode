@@ -1,6 +1,6 @@
 package String;
 
-public class _1662 {
+public class _1662_Check_If_Two_String_Arrays_are_Equivalent {
     public static boolean arrayStringsAreEqual(String[] word1, String[] word2) {
 
         StringBuilder sb1 = new StringBuilder();

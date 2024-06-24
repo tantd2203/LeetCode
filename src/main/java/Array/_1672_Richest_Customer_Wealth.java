@@ -1,6 +1,6 @@
 package Array;
 
-public class _1672 {
+public class _1672_Richest_Customer_Wealth {
     public static int maximumWealth(int[][] accounts) {
 
         int numberAccount = accounts.length;

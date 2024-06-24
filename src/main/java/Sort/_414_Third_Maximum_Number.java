@@ -2,7 +2,7 @@ package Sort;
 
 import java.util.*;
 
-public class _414 {
+public class _414_Third_Maximum_Number {
 
     public  static int thirdMax(int [] nums) {
         int max = 0;

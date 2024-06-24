@@ -1,6 +1,6 @@
 package Array;
 
-public class _1351 {
+public class _1351_Count_Negative_Numbers_in_a_Sorted_Matrix {
     public int countNegatives(int[][] grid) {
 
         int  count = 0;
