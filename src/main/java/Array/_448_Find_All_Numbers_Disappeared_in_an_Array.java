@@ -1,8 +1,7 @@
 package Array;
 
+import java.util.*;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 public class _448_Find_All_Numbers_Disappeared_in_an_Array {
 
@@ -22,6 +21,26 @@ public class _448_Find_All_Numbers_Disappeared_in_an_Array {
                 result.add(i);
             }
         }
+
+        return result;
+    }
+
+
+    public static List<Integer> findDisappearedNumbers_useSet(int[] nums) {
+
+        Set<Integer> listNumberUnique = new HashSet<>();
+        List<Integer> result = new ArrayList<>();
+        for (int num : nums) {
+            listNumberUnique.add(num);
+        }
+
+        for (int i = 1; i <= nums.length; i++) {
+
+            if (!listNumberUnique.contains(i)) {
+                result.add(i);
+            }
+        }
+
 
         return result;
     }
