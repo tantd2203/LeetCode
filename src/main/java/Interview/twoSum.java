@@ -1,35 +1,33 @@
 package Interview;
 
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
 import java.util.Map;
 
 public class twoSum {
     public static int[] twoSum(int[] nums, int target) {
-        // Initialize an empty hash map
-        Map<Integer, Integer> numMap = new HashMap<>();
+        Map<Integer, Integer> map = new HashMap<>();
 
-        // Iterate over the array of numbers with their indices
-        for (int i = 0; i < nums.length; i++) {
-            // Calculate the complement
-            int complement = target - nums[i];
+        for (int i = 0; i <nums.length ; i++) {
 
-            // Check if the complement is in the hash map
-            if (numMap.containsKey(complement)) {
-                // If it is, return the indices
-                return new int[] { numMap.get(complement), i };
+            int asn = target  - nums[i];
+
+            if (map.containsKey(asn)){
+
+                return  new int[]{map.get(asn), i};
             }
 
-            // If not, add the current number and its index to the hash map
-            numMap.put(nums[i], i);
+            map.put(nums[i],i);
         }
 
-        // If no solution is found, return an empty array or throw an exception
-        throw new IllegalArgumentException("No two sum solution");
+
+        throw new ArrayIndexOutOfBoundsException("ss");
     }
 
     public static void main(String[] args) {
         int[] nums = { 2, 7, 11, 15 };
-        int target = 9;
+        int target = 17;
         int[] result = twoSum(nums, target);
         System.out.println("Indices: " + result[0] + ", " + result[1]);  // Output: Indices: 0, 1
     }
