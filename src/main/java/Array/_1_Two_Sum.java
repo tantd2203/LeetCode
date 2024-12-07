@@ -4,24 +4,33 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class _1_Two_Sum {
-    public int[] twoSum(int[] nums, int target) {
-// Create a HashMap to store elements and their indices
+    public static int[] twoSum(int[] nums, int target) {
+
         Map<Integer, Integer> map = new HashMap<>();
 
-        // Iterate through the array
         for (int i = 0; i < nums.length; i++) {
-            int complement = target - nums[i];
 
-            // If the complement exists in the map, return the indices
-            if (map.containsKey(complement)) {
-                return new int[] { map.get(complement), i };
+            int soConLai = target - nums[i];
+
+            if (map.containsKey(soConLai)) {
+
+                return  new int[]{map.get(i) ,i};
             }
 
-            // Otherwise, put the current element and its index into the map
-            map.put(nums[i], i);
+            map.put(nums[i], i); // save key = value  and   value = index
         }
 
-        // If no solution is found, return an empty array
-        return new int[0];
+
+        return  new int[0];
+
+    }
+
+    public static void main(String[] args) {
+
+        int[] n = {2, 7, 11, 8};
+        int target = 10;
+
+        twoSum(n, target);
+
     }
 }

@@ -1,5 +1,8 @@
 package Interview;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class findThirdLargest {
     public static int findThirdLargest(int[] arr) {
         if (arr.length < 3) {
@@ -28,7 +31,12 @@ public class findThirdLargest {
 
     public static void main(String[] args) {
         int[] arr = {12, 13, 1, 10, 34, 1};
-        System.out.println("The third largest number is: " + findThirdLargest(arr));
+
+        Arrays.parallelSort(arr);
+        for (int a : arr){
+            System.out.println(a);
+        }
+      //  System.out.println("The third largest number is: " + findThirdLargest(arr));
     }
 
 }
