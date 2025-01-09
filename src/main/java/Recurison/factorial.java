@@ -10,7 +10,7 @@ public class factorial {
     }
     public static void main(String[] args) {
 
-        System.out.println(fuc_factorial(10));
+        System.out.println(fuc_factorial(1));
 
     }
 }

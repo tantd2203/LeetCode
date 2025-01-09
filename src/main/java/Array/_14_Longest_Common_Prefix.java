@@ -9,7 +9,7 @@ public class _14_Longest_Common_Prefix {
         }
 
         // Sort the array of strings lexicographically
-        Arrays.sort(strs);
+        Arrays.parallelSort(strs);
 
         String first = strs[0];
         String last = strs[strs.length - 1];

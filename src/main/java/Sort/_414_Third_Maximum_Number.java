@@ -6,7 +6,6 @@ public class _414_Third_Maximum_Number {
 
     public static int thirdMax(int[] nums) {
 
-
         int max = 0;
         Arrays.sort(nums);
         List<Integer> numList = new ArrayList<>();

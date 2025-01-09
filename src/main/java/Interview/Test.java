@@ -8,8 +8,9 @@ public class Test {
 
     public static void main(String[] args) {
 
-        List<String> a = new ArrayList<>();
+        int i = 5;
 
+        System.out.println(  i++ +"s"+(++i * 3));
 
     }
 }
