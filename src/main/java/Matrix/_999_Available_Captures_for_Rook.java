@@ -37,7 +37,7 @@ public class _999_Available_Captures_for_Rook {
 
         // ben tren
 
-        for (int row = rookCol - 1; row >= 0; row--) {
+        for (int row = rookRow - 1; row >= 0; row--) {
             if (board[row][rookCol] == 'B') break;
             if (board[row][rookCol] == 'p') {
                 attackCount++;
@@ -46,7 +46,7 @@ public class _999_Available_Captures_for_Rook {
 
         }
         // duoi
-        for (int row = rookCol + 1; row < board.length; row++) {
+        for (int row = rookRow + 1; row < board.length; row++) {
             if (board[row][rookCol] == 'B') break;
             if (board[row][rookCol] == 'p') {
                 attackCount++;
