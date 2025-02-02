@@ -16,7 +16,7 @@ public class _2500_Delete_Greatest_Value_in_Each_Row {
         int numRow = grid.length;
         int numCol = grid[0].length;
 
-        for (int col = numCol - 1; 0 >= col; col--) {
+        for (int col = numCol - 1; col >=0; col--) {
 
             int maxColum = 0;
 
@@ -32,7 +32,11 @@ public class _2500_Delete_Greatest_Value_in_Each_Row {
     }
 
     public static void main(String[] args) {
-        int[][] grid = {{5, 3, 9, 1}};
+        int[][] grid = {
+                {1, 3, 2},
+                {4, 6, 5},
+                {7, 9, 8}
+        };
 
         int result = deleteGreatestValue(grid);
         System.out.println(result); // Expected Output: 9
