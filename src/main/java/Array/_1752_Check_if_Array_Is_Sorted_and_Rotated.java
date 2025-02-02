@@ -64,6 +64,6 @@ public static void main(String[] args) {
     int[] expected = {3, 4, 5, 1, 2};
 
     System.out.println(check(expected));
-
+}
 }
 
