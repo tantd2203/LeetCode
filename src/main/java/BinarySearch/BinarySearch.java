@@ -29,11 +29,7 @@ public class BinarySearch {
     }
 
     public static void main(String[] args) {
-//        int[] a = {1, 2, 3, 4, 5, 6, 7, 8};
-//        System.out.println(binary_search(a, 9));
-        HashMap<String, String> a = new HashMap<>();
-        a.put("2", "");
-        a.put("1","");
+        int[] a = {1, 2, 3, 4, 5, 6, 7, 8};
         System.out.println(a);
     }
 
